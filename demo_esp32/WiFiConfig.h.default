@@ -1,0 +1,2 @@
+const char *SSID = "TEST-DO-NOT-USE-PSK";
+const char *WiFiPassword = "WiFiPassword";

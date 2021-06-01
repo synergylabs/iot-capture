@@ -1,0 +1,45 @@
+#ifndef CAPTURE_CORE_GLOBAL_CONFIG
+#define CAPTURE_CORE_GLOBAL_CONFIG
+
+#include <string>
+
+const char PROJECT_NAME[] = "@PROJECT_NAME@";
+const char PROJECT_VER[] = "@PROJECT_VERSION@";
+const char PROJECT_VER_MAJOR[] = "@PROJECT_VERSION_MAJOR@";
+const char PROJECT_VER_MINOR[] = "@PROJECT_VERSION_MINOR@";
+const char PROJECT_VER_PATCH[] = "@PROJECT_VERSION_PATCH@";
+
+const int MAX_BUFFER_SIZE = 1024;
+const int PASSWORD_LEN = 12;
+const int PORT = 8080;
+const int MAX_CONN = 3;
+const char MONITOR_PUBLIC_KEY[] = "monitor-pubic.pem";
+const char MONITOR_PRIVATE_KEY[] = "monitor-private.pem";
+const char RADIUS_FOLDER[] = "/etc/freeradius";
+const char RADIUS_USERS_FILE[] = "/etc/freeradius/3.0/mods-config/files/authorize";
+const char AP_VLAN_INTERFACE[] = "wlan1";
+const char DHCP_CONFIG_FILE[] = "/etc/dhcp/dhcpd.conf";
+const char DHCP_SERVICE_FILE[] = "/etc/default/isc-dhcp-server";
+const char HOSTAPD_EAP_CONFIG_FILE[] = "/etc/hostapd/hostapd.conf";
+
+const int VLAN_LOWER = 100;
+const int VLAN_UPPER = 200;
+const int DRIVER_PORT_INIT = 5000;
+const int DRIVER_PORT_UPPER = 10000;
+
+const char DELETE_HUB_USER_SCRIPT[] = "/home/pi/delete_testing_users.sh";
+
+const char DEFAULT_TOMOYO_GROUP[] = "/home/pi/capture_default_tomoyo.txt";
+const int DEFAULT_TOMOYO_GROUP_NUMBER = 99;
+
+/*
+ * Settings for resource isolation - User changeable in "capture_monitor.cfg"
+ */
+extern bool ENABLE_NETWORK_ISOLATION;
+extern bool ENABLE_PROCESS_ISOLATION;
+extern bool SKIP_DRIVER_CREATION;
+
+extern std::string DEFAULT_DRIVER;
+extern std::string DEFAULT_CAMERA_DRIVER;
+
+#endif // CAPTURE_CORE_GLOBAL_CONFIG

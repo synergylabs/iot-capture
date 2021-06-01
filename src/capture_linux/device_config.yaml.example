@@ -1,0 +1,4 @@
+psk_ssid: TEST-DO-NOT-USE-PSK 
+psk_pass: <PASSWORD>
+wlan_iface: wlan0
+eap_ssid: TEST-DO-NOT-USE 

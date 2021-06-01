@@ -1,0 +1,1 @@
+../../pio-SmartThings_st_switch_base/src/default_iot_capability.h
